@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:id="@+id/newacct"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:cardMaxElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <EditText
+                        android:id="@+id/customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Customer Name"
+                        android:textColorHint="@color/black"
+                        android:padding="10dp" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <EditText
+                        android:id="@+id/customer_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Customer Address"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/black"
+                        android:maxLength="10"
+                        android:padding="10dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/customer_custype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <EditText
+                        android:id="@+id/customer_fixedprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit"
+                        android:textColorHint="@color/black"
+                        android:hint="Enter Price"
+                        android:inputType="number"
+                        android:maxLines="2"
+                        android:padding="10dp" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <EditText
+                        android:id="@+id/customer_mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Mobile no"
+                        android:inputType="number"
+                        android:textColorHint="@color/black"
+                        android:maxLines="2"
+                        android:padding="10dp" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardMaxElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <EditText
+                        android:id="@+id/customer_userid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit"
+                        android:hint="Enter User id"
+                        android:textColorHint="@color/black"
+                        android:inputType="textMultiLine"
+                        android:maxLines="2"
+                        android:padding="10dp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <Button
+                    android:id="@+id/customer_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/customer_showdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:text="show account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
